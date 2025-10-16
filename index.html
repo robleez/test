@@ -4723,6 +4723,29 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 </script>
+
+<!-- ====== Firebase SDKs + Config + Cloud Adapter (paste near end of <body>) ====== -->
+<!-- Firebase SDKs (Compat versions for easier drop-in) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<!-- 🔑 Your Firebase project config (replace with your values) -->
+<script>
+  window.__FIREBASE_CONFIG__ = {
+    apiKey: "AIzaSyCujQLa7Wua7o4DnTNe8xaU4WP3g1dmbdI",
+    authDomain: "mcdjofree.firebaseapp.com",
+    projectId: "mcdjofree",
+    storageBucket: "mcdjofree.firebasestorage.app",
+    messagingSenderId: "1005197738955",
+    appId: "1:1005197738955:web:44a04d2da8af3f2b13ec4e"
+  };
+</script>
+
+<!-- Cloud Adapter (must be after your app scripts so it can hook functions) -->
+<script src="./cloud_adapter_v1.js"></script>
+<!-- ======================================================================== -->
+
 </body>
 
 <!--
